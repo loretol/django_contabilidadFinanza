@@ -151,6 +151,7 @@ class FactorProducto(models.Model):
     nombre_producto = models.CharField(max_length=20, null=False, blank=False)
     precio_unitario = models.IntegerField()
     fecha_modificacion = models.DateField()
+    precio_final = models.IntegerField()
 
     def __str__(self):
         return f"Factor Producto #{self.id_factor_prod} - Producto: {self.nombre_producto}, Factor Venta: {self.factor_venta}, Precio Unitario: {self.precio_unitario}"
